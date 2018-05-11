@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+
+/* Colori aziendali
+
+Dark red: #741C1A
+Dark Gray: #7A7C77
+Light Gray: #B0B1AB
+
+*/
+
+.material-icons
+{
+	color: #333;
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 30px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+body
+{
+	background: url('../img/building.jpg'), #7A7C77;
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	font-family: 'Catamaran';
+}
+
+.bg-light
+{
+	/* background-color: rgba(255,255,255,.2) !important;*/
+	filter: drop-shadow(0 5px 6px rgba(0,0,0,.6));
+	border-bottom: 1px solid #333;
+	z-index: 2000;
+}
+
+.navbar-expand-lg > .container
+{
+	display: flex;
+	justify-content: space-between !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link
+{
+	color: rgba(116, 28, 26, 1);
+}
+
+.brand
+{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.brand img
+{
+  width: 40%;
+}
+
+.brand a
+{
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.navbar-expand-lg .navbar-collapse
+{
+	justify-content: flex-end;
+	flex-grow: .2;
+}
+
+#navbarSupportedContent
+{
+	justify-content: center;
+	flex-grow: .5;
+}
+
+#navbarSupportedContent .navbar-nav
+{
+	/*background-color: green;*/
+}
+
+#navbarContacts .navbar-nav .nav-item
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 15px;
+	border-radius: 50px;
+	transition: all .2s ease-in-out;
+}
+
+#navbarContacts .navbar-nav .nav-item:hover
+{
+	background-color: rgba(0,0,0,.1);
+}
+
+#navbarContacts .navbar-nav .nav-item .material-icons,
+#navbarContacts .navbar-nav .nav-item a
+{
+	color: #741C1A;
+	font-size: 16px;
+}
+
+
+.dropdown-menu
+{
+	left: -50px;
+}
+
+.dropdown-menu a:hover
+{
+	color: #fff;
+	background-color: #741C1A;
+}
+
+.main-section
+{
+	padding: 6%;
+}
+
+.login-area
+{
+	padding: 40px;
+	/*background-color: rgb(128, 128, 128);*/
+	background-color: #B0B1AB;
+	filter: drop-shadow(0 0 20px rgba(0,0,0,.6));
+	max-height: 430px;
+}
+
+.login-area .form-group .form-control:focus
+{
+	box-shadow: none;
+	box-shadow: 0 0 5px 5px rgba(122, 124, 119, .5);
+	border-color: #333;
+}
+
+.login-area ul
+{
+	margin: 0;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.login-area ul li
+{
+	list-style-type: none;
+}
+
+.login-title
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	width: 80%;
+}
+
+.login-title h2
+{
+	font-size: 2.5em;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	text-align: center;
+}
+
+.login-title .material-icons
+{
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 35px;
+}
+
+.login-area .btn
+{
+	width: 100%;
+	color: #fff;
+	font-weight: bold;
+	padding: 7px 25px;
+	background: #741C1A;
+	border: 2px solid #741C1A;
+	transition: all .2s ease-in-out;
+	margin-top: 10px;
+}
+
+.login-area .btn-primary:hover
+{
+	filter: drop-shadow(0 3px 1px rgba(0,0,0,.7));
+	border: 2px solid #741C1A;
+	background-color: #741C1A;
+}
+
+hr
+{
+	margin-top: 30px;
+}
+
+.login-help
+{
+	color: #333;
+	margin-top: 20px;
+}
+
+.login-help p
+{
+	margin: 0;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.login-help .login-tips
+{
+	margin-top: 10px;
+}
+
+.login-help .login-tips li
+{
+	font-size: small;
+}
+
+.login-help .login-tips li a
+{
+	transition: all .2s ease-in-out;
+	color: #333;
+}
+
+.login-help .login-tips li a:hover
+{
+
+}
+
+.form-control
+{
+	margin-top: 20px;
+	border: none;
+}
+
+.docs-area
+{
+	color: #fff;
+}
+
+.docs-area h1
+{
+	margin-bottom: 30px;
+	filter: drop-shadow(0 0 7px rgba(0,0,0,1));
+}
+
+.docs-area ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.docs-area ul li a
+{
+	color: #fff;
+}
+
+.nav-pills .nav-link
+{
+	transition: all .2s ease-in-out;
+	color: #fff;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link
+{
+	margin-left: 10px;
+	max-width: 100%;
+	background: rgba(116, 28, 26, 1);
+	/*filter: drop-shadow(0 4px 2px rgba(0,0,0,.7));*/
+}
+
+#v-pills-profile ul li i
+{
+	transform: rotate(30deg);
+	font-size: 18px;
+	color: #fff;
+	margin-right: 10px;
+}
+
+#v-pills-profile ul li
+{
+	margin-bottom: 5px;
+	vertical-align: middle;
+}
+
+.tab-content > .active
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-radius: 5px;
+	border: 1px solid rgba(255,255,255,.5);
+	background-color: rgba(0,0,0,.5);
+	padding: 20px;
+}
+
+#sp-footer
+{
+	margin-top: 150px;
+	color: #fff;
+	font-size: 16px;
+	height: 150px;
+	background-color: rgba(116, 28, 26, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width:770px)
+{
+	.login-area
+	{	
+		width: 70%;
+		margin: 15px auto !important;
+		margin-top: 30px !important;
+	}
+}
+
+ @media screen and (max-width:551px)
+ {
+	.brand
+	{
+		width: 30%;
+	}
+
+	.main-section h1
+	{
+		font-size: 24px;
+	}
+
+	.nav-pills .nav-link.active, .nav-pills .show > .nav-link
+	{
+		margin-left: 10px;
+		max-width: 90%;
+		background-color: #741C1A;
+	}
+
+	.brand img
+	{
+		width: 100%;
+	}
+
+	.brand a
+	{
+		/* font-size: 14px; */
+		display: none;
+	}
+
+	.login-title h2
+	{
+		font-size: 2em;
+	}
+
+	.login-title .material-icons
+	{
+		font-size: 25px;
+	}
+
+	.login-area
+	{
+		margin: 20px;
+		width: 90%;
+	}
+ }

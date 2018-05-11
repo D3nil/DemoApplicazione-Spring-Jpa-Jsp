@@ -81,7 +81,6 @@ public class Fornitore implements Serializable
 	private String faxNumber;
 
 	@Column(name = "VATRegistration_No_")
-
 	private String vatNumber;
 
 	@Column(name = "Blocked_Qualification")
