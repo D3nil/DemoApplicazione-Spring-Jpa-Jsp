@@ -5,12 +5,15 @@ package org.consoft.APP.DemoPortaleFornitoriAppSpringJpa.model;
 
 import java.io.Serializable;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -90,6 +93,14 @@ public class Fornitore implements Serializable
 	@Column(name = "Qualification_Notes")
 
 	private String qualificationNotes;
+	
+	
+	@OneToOne(fetch = FetchType.LAZY,
+            cascade =  CascadeType.ALL,
+            mappedBy = "fornitore")
+    private PasswFornitore passwFornitore;
+
+	
 
 	public Fornitore() { super(); }
 
